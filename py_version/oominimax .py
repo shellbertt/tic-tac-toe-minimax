@@ -13,9 +13,9 @@ Author: Clederson Cruz
 Year: 2017
 License: GNU GENERAL PUBLIC LICENSE (GPL)
 
-Example:
-Paul Lu
-CCID:  paullu
+CMPUT 274, 2020 Fall Term, Weekly Exercise #6 Object Oriented Minimax, by:
+Kaaden RumanCam
+CCID: 1664694
 """
 
 HUMAN = -1

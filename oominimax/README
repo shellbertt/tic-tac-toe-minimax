@@ -1,0 +1,8 @@
+Kaaden RumanCam, 1664694
+CMPUT 274, Fall 2020, Weekly Exercise #6 Object Oriented Minimax
+
+The submission is a python module that demonstrates the minimax algorithm by
+using an ai that plays tictactoe converted to object oriented design. I do not
+think there are any other special running instructions or special cases.
+
+I had a couple questions; they are inline on lines 231, 240, 272.

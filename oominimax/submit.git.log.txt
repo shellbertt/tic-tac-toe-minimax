@@ -1,0 +1,230 @@
+commit 7d0336bcb4845e0a62775ae0a7c41e21ae14536d
+Author: shellbertt <kaadenruman@hotmail.com>
+Date:   Mon Nov 16 21:52:24 2020 -0700
+
+    Should be in working order.
+
+commit fb20c515e673f6f0ca1994a61940169244588d59
+Author: shellbertt <kaadenruman@hotmail.com>
+Date:   Mon Nov 16 21:27:54 2020 -0700
+
+    Resolved Runtime Errors.
+
+commit 1d71853666bcddb63c8b39d1af42bd0c565d52fe
+Author: shellbertt <kaadenruman@hotmail.com>
+Date:   Mon Nov 16 21:11:54 2020 -0700
+
+    Refactored. Before first test.
+
+commit fa07ccb91bae049b814321ce0ace05704bc3f7df
+Author: shellbertt <kaadenruman@hotmail.com>
+Date:   Mon Nov 16 15:36:28 2020 -0700
+
+    Made oominimax.py for my changes and reverted minimax.py to be pure.
+
+commit df4a5bac985b4ff69ac3fdd28fe1b6525f67a7ff
+Author: shellbertt <kaadenruman@hotmail.com>
+Date:   Mon Nov 16 15:29:33 2020 -0700
+
+    Forgot to circle relevant areas in debugger.png last time.
+
+commit 36e03faf1d172c523e4cfb5eb57d93dfbd70838c
+Author: shellbertt <kaadenruman@hotmail.com>
+Date:   Mon Nov 16 14:47:19 2020 -0700
+
+    Submission folder and debugger screenshot.
+
+commit c33deac888cc7fbd0fc9d3d0e4671200965c709c
+Author: shellbertt <kaadenruman@hotmail.com>
+Date:   Mon Nov 16 12:33:40 2020 -0700
+
+    First commit! Added info to docstring.
+
+commit f0c853974e5b6d867d8681164d502905c911632b
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:57:21 2020 -0700
+
+    Name in docstring
+
+commit 40820ac1347ab15e4e30e3d3dfefd1c3066bb2d7
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:44:42 2020 -0700
+
+    Test inputs
+
+commit c4da95bb37484dd83cb9e5416a3fe4b27a547d46
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:44:25 2020 -0700
+
+    More tests output
+
+commit f65dd3cddb6403c8feadea5b6e847af0781a3260
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:37:52 2020 -0700
+
+    First automated test
+
+commit c68303a8ec6fe9ffec62e1ca5b3e3693cffb35e9
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:31:08 2020 -0700
+
+    Simplify output and do not sleep.
+
+commit dc72103fcc35c359210b2fa61e7fbe1ab572321d
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:29:22 2020 -0700
+
+    Mod to prevent clearing of the screen
+
+commit 2521a0220ec9147a2409d67efef1f6ef3ae85716
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:20:09 2020 -0700
+
+    Easier testing
+
+commit f882fa95c819d8813f6494588f987110d0a6a538
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:18:59 2020 -0700
+
+    Make random numbers deterministic with random seed.
+
+commit 4f56bd5b1dcf809d159996403f8a64cddec45163
+Author: Paul Lu <paullu@cs.ualberta.ca>
+Date:   Wed Nov 4 21:08:10 2020 -0700
+
+    Minor update to README
+
+commit 10168a7d9f8a7cca18a47acfdf0aed356515514b
+Merge: 8f0ced7 bf115e4
+Author: Clederson Cruz <cledersonbc@live.com>
+Date:   Tue Oct 13 20:29:38 2020 -0300
+
+    Merge pull request #3 from sahil-python/master
+    
+    Update README.md
+
+commit bf115e4d284ea2ee3178013e4da71c95760f4c12
+Author: sahil-python <67292423+sahil-python@users.noreply.github.com>
+Date:   Thu Oct 1 19:25:41 2020 +0530
+
+    Update README.md
+
+commit 8f0ced7b12d2901b659a08b8d96e62b38475fd51
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sat Jan 26 20:19:47 2019 -0200
+
+    refactored some variable names
+
+commit 2fcef1530da7c4243eee9c1dc1d9c824454e7f0d
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sat Oct 27 23:09:10 2018 -0300
+
+    DOS encoding type -> Unix
+
+commit bd03f26e1cde1fd42a4f2d27fcf64d89c85b001f
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sun Feb 11 17:31:14 2018 -0200
+
+    Refactory
+
+commit 5ef64c1340dbea774d8c6416ed722a08e2d30a10
+Author: Cledersonbc <cledersonbc@live.com>
+Date:   Fri Feb 9 08:37:02 2018 -0200
+
+    Adjusted mobile viewport
+
+commit 8d84033f75f5fd7b82fa4f520a934ae9904c0864
+Author: Clederson Cruz <cledersonbc@live.com>
+Date:   Sun Dec 24 18:06:15 2017 -0200
+
+    Revision
+
+commit d97e29192f246db48b7d6d03e2c8979c65282b56
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sun Dec 24 17:57:47 2017 -0200
+
+    Last part of explanation on README
+
+commit 7c166488769af9edc97b74001f5d5f3d8142d291
+Author: Clederson Cruz <cledersonbc@live.com>
+Date:   Sun Dec 24 01:49:57 2017 -0200
+
+    Little adjust in indentation.
+
+commit ccd105994ac0c9a2a6d39387e33eacd01662ed4d
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sun Dec 24 01:40:29 2017 -0200
+
+    Explanation about the algorithm
+
+commit 56a2e5acba5dc3a62121687bf8cb933169095097
+Author: Clederson Cruz <cledersonbc@live.com>
+Date:   Fri Dec 22 00:31:16 2017 -0200
+
+    Deleted old README
+
+commit 32ac80812413429a87c5e611a8acb81d5763ae91
+Author: Clederson Cruz <cledersonbc@live.com>
+Date:   Fri Dec 22 00:30:04 2017 -0200
+
+    Commit de  "teste"
+
+commit 5124c7e7612638181b5eb95b49bdcf02c4d47ee1
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Fri Dec 22 00:28:14 2017 -0200
+
+    Moved README.md
+
+commit 1fae6a1b8025ee36169cff9a6b84b20d274c78df
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Fri Dec 22 00:06:51 2017 -0200
+
+    Web version added
+
+commit 7514ffcef9839169a7c053669605740840503904
+Author: Cledersonbc <cledersonbc@live.com>
+Date:   Thu Dec 21 08:53:14 2017 -0200
+
+    Fixed keyboardInterrupt and clear function
+
+commit 152cf12770e1b91ed1bf1d3a127cad0bfef97b8e
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Thu Dec 21 01:24:12 2017 -0200
+
+    Playable version of Tic Tac Toe
+
+commit a8a9c07f97cd1ae7b6d3c4f5e6fc93b0af545de2
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Tue Dec 19 20:22:03 2017 -0200
+
+    Minimax done v. 2.0
+
+commit ecf5a10319a7416695248b5471a604b37f01b344
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Tue Dec 19 00:34:02 2017 -0200
+
+    Added minimax v.1 with some bugs
+
+commit fef7e583ba797e754428b2a15054f0361136cf48
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sun Dec 17 22:17:29 2017 -0200
+
+    Refactory and DEBUG functions
+
+commit 69892c07b85b07847a6affef9df227f046b13731
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sun Dec 17 16:52:56 2017 -0200
+
+    Added gameover function
+
+commit 73712682515ad942004dd92b2b5a1c6c8f5e144b
+Author: cledersonbc <cledersonbc@live.com>
+Date:   Sun Dec 17 13:23:42 2017 -0200
+
+    Added minimax
+
+commit 349e55b93a137b24fed74dbacc6585907c36530d
+Author: Clederson Cruz <cledersonbc@live.com>
+Date:   Sun Dec 17 13:17:06 2017 -0200
+
+    Initial commit

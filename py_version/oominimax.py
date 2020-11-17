@@ -34,7 +34,7 @@ def clean():
         system('clear')
 
 
-class C274: #From Assignment #1
+class C274:  # From Assignment #1
     def __init__(self):
         self.type = str(self.__class__)
         return
@@ -49,10 +49,10 @@ class C274: #From Assignment #1
 
 class Tictactoe(C274):
     def __init__(self):
-        super().__init()
+        super().__init__()
         self.HUMAN = -1
         self.COMP = +1
-        board = Board(HUMAN, COMP)
+        board = Board(self.HUMAN, self.COMP)
 
     def play(self):
         # Paul Lu.  Set the seed to get deterministic behaviour for each run.
@@ -93,7 +93,8 @@ class Tictactoe(C274):
                 print('Bad choice')
 
         # Main loop of this game
-        while len(board.empty_cells(board.get_board())) > 0 and not board.game_over(board.get_board()):
+        while len(board.empty_cells(board.get_board(
+            ))) > 0 and not board.game_over(board.get_board()):
             if first == 'N':
                 self.ai_turn(c_choice, h_choice)
                 first = ''
@@ -116,108 +117,107 @@ class Tictactoe(C274):
             print('DRAW!')
 
     def minimax(state, depth, player):
-    """
-    AI function that choice the best move
-    :param state: current state of the board
-    :param depth: node index in the tree (0 <= depth <= 9),
-    but never nine in this case (see iaturn() function)
-    :param player: an human or a computer
-    :return: a list with [the best row, best col, best score]
-    """
-    if player == COMP:
-        best = [-1, -1, -infinity]
-    else:
-        best = [-1, -1, +infinity]
-
-    if depth == 0 or board.game_over(state):
-        score = board.evaluate(state)
-        return [-1, -1, score]
-
-    for cell in board.empty_cells(state):
-        x, y = cell[0], cell[1]
-        state[x][y] = player
-        score = self.minimax(state, depth - 1, -player)
-        state[x][y] = 0
-        score[0], score[1] = x, y
-
+        """
+        AI function that choice the best move
+        :param state: current state of the board
+        :param depth: node index in the tree (0 <= depth <= 9),
+        but never nine in this case (see iaturn() function)
+        :param player: an human or a computer
+        :return: a list with [the best row, best col, best score]
+        """
         if player == COMP:
-            if score[2] > best[2]:
-                best = score  # max value
+            best = [-1, -1, -infinity]
         else:
-            if score[2] < best[2]:
-                best = score  # min value
+            best = [-1, -1, +infinity]
 
-    return best
+        if depth == 0 or board.game_over(state):
+            score = board.evaluate(state)
+            return [-1, -1, score]
+
+        for cell in board.empty_cells(state):
+            x, y = cell[0], cell[1]
+            state[x][y] = player
+            score = self.minimax(state, depth - 1, -player)
+            state[x][y] = 0
+            score[0], score[1] = x, y
+
+            if player == COMP:
+                if score[2] > best[2]:
+                    best = score  # max value
+            elif score[2] < best[2]:
+                    best = score  # min value
+
+        return best
 
     def ai_turn(c_choice, h_choice):
-    """
-    It calls the minimax function if the depth < 9,
-    else it choices a random coordinate.
-    :param c_choice: computer's choice X or O
-    :param h_choice: human's choice X or O
-    :return:
-    """
-    depth = len(board.empty_cells(board.get_board()))
-    if depth == 0 or game_over(board.get_board()):
-        return
-
-    clean()
-    print(f'Computer turn [{c_choice}]')
-    board.render(board.get_board(), c_choice, h_choice)
-
-    if depth == 9:
-        x = choice([0, 1, 2])
-        y = choice([0, 1, 2])
-    else:
-        move = self.minimax(board.get_board(), depth, COMP)
-        x, y = move[0], move[1]
-
-    board.set_move(x, y, COMP)
-    # Paul Lu.  Go full speed.
-    # time.sleep(1)
-
-    def human_turn(c_choice, h_choice):
         """
-        The Human plays choosing a valid move.
+        It calls the minimax function if the depth < 9,
+        else it choices a random coordinate.
         :param c_choice: computer's choice X or O
         :param h_choice: human's choice X or O
         :return:
         """
         depth = len(board.empty_cells(board.get_board()))
-        if depth == 0 or board.game_over(board.get_board()):
+        if depth == 0 or game_over(board.get_board()):
             return
 
-        # Dictionary of valid moves
-        move = -1
-        moves = {
-            1: [0, 0], 2: [0, 1], 3: [0, 2],
-            4: [1, 0], 5: [1, 1], 6: [1, 2],
-            7: [2, 0], 8: [2, 1], 9: [2, 2],
-        }
-
         clean()
-        print(f'Human turn [{h_choice}]')
+        print(f'Computer turn [{c_choice}]')
         board.render(board.get_board(), c_choice, h_choice)
 
-        while move < 1 or move > 9:
-            try:
-                move = int(input('Use numpad (1..9): '))
-                coord = moves[move]
-                can_move = board.set_move(coord[0], coord[1], self.HUMAN)
+        if depth == 9:
+            x = choice([0, 1, 2])
+            y = choice([0, 1, 2])
+        else:
+            move = self.minimax(board.get_board(), depth, COMP)
+            x, y = move[0], move[1]
 
-                if not can_move:
-                    print('Bad move')
-                    move = -1
-            except (EOFError, KeyboardInterrupt):
-                print('Bye')
-                exit()
-            except (KeyError, ValueError):
-                print('Bad choice')
+        board.set_move(x, y, COMP)
+        # Paul Lu.  Go full speed.
+        # time.sleep(1)
+
+        def human_turn(c_choice, h_choice):
+            """
+            The Human plays choosing a valid move.
+            :param c_choice: computer's choice X or O
+            :param h_choice: human's choice X or O
+            :return:
+            """
+            depth = len(board.empty_cells(board.get_board()))
+            if depth == 0 or board.game_over(board.get_board()):
+                return
+
+            # Dictionary of valid moves
+            move = -1
+            moves = {
+                1: [0, 0], 2: [0, 1], 3: [0, 2],
+                4: [1, 0], 5: [1, 1], 6: [1, 2],
+                7: [2, 0], 8: [2, 1], 9: [2, 2],
+            }
+
+            clean()
+            print(f'Human turn [{h_choice}]')
+            board.render(board.get_board(), c_choice, h_choice)
+
+            while move < 1 or move > 9:
+                try:
+                    move = int(input('Use numpad (1..9): '))
+                    coord = moves[move]
+                    can_move = board.set_move(coord[0], coord[1], self.HUMAN)
+
+                    if not can_move:
+                        print('Bad move')
+                        move = -1
+                except (EOFError, KeyboardInterrupt):
+                    print('Bye')
+                    exit()
+                except (KeyError, ValueError):
+                    print('Bad choice')
 
 
 class Board(C274):
     def __init__(self, human, comp):
-        super().__init()
+        super().__init__()
         self.__board = [
             [0, 0, 0],
             [0, 0, 0],
@@ -226,7 +226,7 @@ class Board(C274):
         self.HUMAN = human
         self.COMP = comp
 
-    def __str__(self, player1, player2, state=self.get_board()):
+    def __str__(self, state, player1, player2):
         '''(Are docstrings necessary for these types of methods?)
         Returns string representation of the object
         player1: symbol representing first player.
@@ -252,15 +252,17 @@ class Board(C274):
             output += '\n\n' + str_line + '\n'
         return output
 
-    def __repr__(self, player1, player2, state=self.get_board()):
+    def __repr__(self, state, player1, player2):
         '''(Are docstrings necessary for these types of methods?)
         Returns string representation of the object
         player1: symbol representing first player.
         player2: symbol representing second player.
         state: optional board state
         '''
-        return self.__str__(player1, player2, state) + '\nHuman: ' + player2 +
-            '\nComputer: ' + player1
+        '''I'm not sure how to format below so it meets the line length
+        requirement; suggestions?
+        '''
+        return self.__str__(player1, player2, state) + '\nHuman: ' + player2 + '\nComputer: ' + player1
 
     def get_board(self):
         """
@@ -357,7 +359,6 @@ class Board(C274):
             return True
         else:
             return False
-
 
     def render(self, state, c_choice, h_choice):
         """
